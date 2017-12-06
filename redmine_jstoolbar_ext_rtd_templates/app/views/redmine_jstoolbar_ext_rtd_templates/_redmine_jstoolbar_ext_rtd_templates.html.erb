@@ -11,6 +11,7 @@
     
     if User.current.admin?
      content_for :header_tags do
+       javascript_include_tag('redmine_jstoolbar_ext_rtd_templates.js', plugin: 'redmine_jstoolbar_ext_rtd_templates') + "\n" +
        javascript_include_tag('redmine_jstoolbar_ext_rtd.js', plugin: 'redmine_jstoolbar_ext_rtd_templates') + "\n" +
        stylesheet_link_tag('redmine_jstoolbar_ext_rtd.css', plugin: 'redmine_jstoolbar_ext_rtd_templates') + "\n"
      end
